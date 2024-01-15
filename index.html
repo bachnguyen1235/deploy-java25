@@ -1,11 +1,901 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deploy project</title>
+    <!-- import thư viện slide OwlCarousel-->
+    <link rel="stylesheet" href="./lib/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/OwlCarousel/assets/owl.theme.default.min.css">
+
+
+    <!-- import ggfont roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- import ggfont Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- import css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>baiktcuoikhoa</title>
 </head>
+
 <body>
-    <h1 style="font-size: 100px;">Kiên ML</h1>
+    <div class="fullsite">
+        <!-- phần top-main -->
+        <div class="top-main">
+            <div class="container-topmain">
+                <!-- phần header trong top-main -->
+                <div class="header">
+                    <div class="header-header">
+                        <div class="timkiem ">
+                            <img class="icontimkiem" src="./assets/img/icontimkiem.png" alt="timkiem">
+                        </div>
+                        <div class="logo">
+                            <img src="./assets/img/logo (1).png" alt="logo">
+                        </div>
+                        <div class="acc-shoping">
+                            <div class="timkiem">
+                                <img class="icontimkiem" src="./assets/img/user.png" alt="user">
+                            </div>
+                            <div class="txt-acc">
+                                <p>Account</p>
+                            </div>
+                            <div class="timkiem logoshoping">
+                                <img class="icontimkiem" src="./assets/img/giohang.png" alt="giohang">
+                            </div>
+                            <div class="txt-shoping txt-acc">
+                                <p>Shoping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line1px"></div>
+                    <!-- phần menu trong header -->
+                    <div class="header-footer">
+                        <ul>
+                            <li>
+                                <a href="#">Jewelry & Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Clothing & Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Home & Living</a>
+                            </li>
+                            <li>
+                                <a href="#">Wedding & Party</a>
+                            </li>
+                            <li>
+                                <a href="#">Toys & Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="#">Art & Collectibles</a>
+                            </li>
+                            <li>
+                                <a href="#">Craft Supplies & Tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- phần banner trong top-main -->
+                <div class="banner">
+                    <div class="textboxbanner">
+                        <div class="textcollection">
+                            <p>Collections</p>
+                        </div>
+                        <div class="textyoucan">
+                            <p class="testkhovl">you can explore ans shop many differnt collection from various barands here.</p>
+                        </div>
+                        <button class="btnshop-now">
+                            <img src="./assets/img/button-shopnow.png" alt="btnshop-now">
+                        </button>
+
+                    </div>
+                    <div class="anhbanner">
+                        <img src="./assets/img/anhbanner.png" alt="anhbanner">
+                        <div class="khunganh-banner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-hoatrai">
+                <img src="./assets/img/hoala-trai.png" alt="hoatrai">
+            </div>
+            <div class="box-hoaphai">
+                <img src="./assets/img/hoala-phai.png" alt="hoaphai">
+            </div>
+        </div>
+        <!-- phần body main -->
+        <div class="body-main">
+            <div class="container-bodymain">
+                <!-- menu logo -->
+                <div class="menu-logo-body">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/brand/graphic.png" alt="graphic">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/brand/salva.png" alt="salva">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/brand/studio.png" alt="studio">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/brand/fur.png" alt="fur">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/brand/travel.png" alt="travel">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- card body -->
+                <div class="banner-body">
+                    <div class="anh-banner-to-trai">
+                        <img src="./assets/img/baner-body/big1.png" alt="big1">
+                        <div class="txt-anhtotrai">
+                            <p>Explore new and popular styles</p>
+                        </div>
+                    </div>
+                    <div class="anh-banner-to-trai boxbannerphai">
+                        <div class="anh-banner-nho-phai">
+                            <img src="./assets/img/baner-body/card1.png" alt="card1">
+                        </div>
+                        <div class="anh-banner-nho-phai">
+                            <img src="./assets/img/baner-body/card2.png" alt="card2">
+                            <button class="box-sale-body">
+                                <img src="./assets/img/sale.png" alt="sale">
+                            </button>
+                        </div>
+                        <div class="anh-banner-nho-phai">
+                            <img src="./assets/img/baner-body/card (1).png" alt="card(1)">
+                        </div>
+                        <div class="anh-banner-nho-phai">
+                            <img src="./assets/img/baner-body/card (2).png" alt="card1(2)">
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- grid-products -->
+                <div class="grid-products">
+                    <div class="txt-grid-products">
+                        <p>Or subscribe to the newsletter</p>
+                    </div>
+                    <div class="menu-filter">
+                        <div class="menu-filter-trai">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="font-family-opensans">all products</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="p-mo font-family-opensans">t-shirt</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="p-mo font-family-opensans">hoodies</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="p-mo font-family-opensans">jacket</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-filter">
+                            <img src="./assets/img/filter.png" alt="filter">
+                        </button>
+                    </div>
+                    <div class="grid-products-sanpham">
+                        <!-- item sanpham -->
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/quanjoker.png" alt="quanjoker">
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Adicolor Classics Joggers
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Dress
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $63.85
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/balo.png" alt="balo">
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Nike Sportswear Futura Luxe
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Bag
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $130.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/khanquangco.png" alt="khanquangco">
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Geometric print Scarf
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        scarf
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $53.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/aovang.png" alt="aovang">
+                                <button class="box-sale-body">
+                                    <img src="./assets/img/sale.png" alt="sale">
+                                </button>
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Yellow Reserved Hoodie
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Dress
+                                    </p>
+                                </div>
+                                <div class="box-gia-sale">
+                                    <div class="box-gia-sanpham ">
+                                        <p class="txt-thongtin-sanpham gia-sale">
+                                            $155.00
+                                        </p>
+                                    </div>
+                                    <div class="txt-giatrcsale">
+                                        <p>
+                                            $364.00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/vayhoa.png" alt="vayhoa">
+                                <button class="box-sale-body">
+                                    <img src="./assets/img/HOT.png" alt="sale">
+                                </button>
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Basic Dress Green
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Dress
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $236.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/giay.png" alt="giay">
+                                <button class="box-sale-body">
+                                    <img src="./assets/img/sale.png" alt="sale">
+                                </button>
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Nike Air Zoom Pegasus
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        shoe
+                                    </p>
+                                </div>
+                                <!-- phần giá của sản phẩm đang sale -->
+                                <div class="box-gia-sale">
+                                    <div class="box-gia-sanpham ">
+                                        <p class="txt-thongtin-sanpham gia-sale">
+                                            $198.00
+                                        </p>
+                                    </div>
+                                    <div class="txt-giatrcsale">
+                                        <p>
+                                            $220.00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/aogio.png" alt="aogio">
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Nike Repel Miler
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Dress
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $120.50
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sanpham-chisnh">
+                            <div class="anh-sanpham">
+                                <img src="./assets/img/sanpham/kinhmat.png" alt="kinhmat">
+                            </div>
+                            <div class="thongtin-sanpham">
+                                <div class="box-ten-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        Nike Sportswear Futura Luxe
+                                    </p>
+                                </div>
+                                <div class="box-loai-sanpham">
+                                    <p class=" p-mo-ttsanpham">
+                                        Glasses
+                                    </p>
+                                </div>
+                                <div class="box-gia-sanpham">
+                                    <p class="txt-thongtin-sanpham">
+                                        $160.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- rectangle-128 -->
+            <div class="rectangle-128">
+                <img class="anh-rectangle" src="./assets/img/zara/anhrectangle.png" alt="anhrectangle">
+                <div class="logo-background-rectangel">
+                    <img src="./assets/img/zara/zaramo.png" alt="zaramo">
+                </div>
+                <div class="txt-rectangel">
+                    <div class="logo-zara">
+                        <img src="./assets/img/zara/logozara.png" alt="logozara">
+                    </div>
+                    <div class="txt-logo-zara">
+                        <p>Lustrous yet understated. The new evening wear collection exclusively offered at the reopened Giorgio Armani boutique in Los Angeles.
+                        </p>
+                    </div>
+                    <button class="button-shopnow">
+                        <img src="./assets/img/seecollection.png" alt="seecollection">
+                    </button>
+                </div>
+            </div>
+            <!-- sellers  -->
+            <div class="body-main">
+                <div class="container-bodymain">
+                    <div class="slider-products">
+                        <div class="txt-bestsellers">
+                            <p>Best sellers</p>
+                        </div>
+                        <!-- menu hotsellers -->
+                        <div class="menu-filter">
+                            <div class="menu-filter-trai">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <p class="font-family-opensans">all products</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p class="p-mo font-family-opensans">t-shirt</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p class="p-mo font-family-opensans">hoodies</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p class="p-mo font-family-opensans">jacket</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-filter">
+                                <img src="./assets/img/showall.png" alt="filter">
+                            </button>
+                        </div>
+                        <div class="slider-bestsellers">
+                            <!-- Set up your HTML -->
+                            <!-- phần slide -->
+                            <div class="owl-carousel">
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/quanjoker.png" alt="quanjoker">
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Adicolor Classics Joggers
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Dress
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $63.85
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/balo.png" alt="balo">
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Nike Sportswear Futura Luxe
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Bag
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $130.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/khanquangco.png" alt="khanquangco">
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Geometric print Scarf
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        scarf
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $53.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/aovang.png" alt="aovang">
+                                                <button class="box-sale-body">
+                                    <img src="./assets/img/sale.png" alt="sale">
+                                </button>
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Yellow Reserved Hoodie
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Dress
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sale">
+                                                    <div class="box-gia-sanpham ">
+                                                        <p class="txt-thongtin-sanpham gia-sale">
+                                                            $155.00
+                                                        </p>
+                                                    </div>
+                                                    <div class="txt-giatrcsale">
+                                                        <p>
+                                                            $364.00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/vayhoa.png" alt="vayhoa">
+                                                <button class="box-sale-body">
+                                                    <img src="./assets/img/HOT.png" alt="sale">
+                                                </button>
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Basic Dress Green
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Dress
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $236.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/giay.png" alt="giay">
+                                                <button class="box-sale-body">
+                                                    <img src="./assets/img/sale.png" alt="sale">
+                                                </button>
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Nike Air Zoom Pegasus
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        shoe
+                                                    </p>
+                                                </div>
+                                                <!-- phần giá của sản phẩm đang sale -->
+                                                <div class="box-gia-sale">
+                                                    <div class="box-gia-sanpham ">
+                                                        <p class="txt-thongtin-sanpham gia-sale">
+                                                            $198.00
+                                                        </p>
+                                                    </div>
+                                                    <div class="txt-giatrcsale">
+                                                        <p>
+                                                            $220.00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/aogio.png" alt="aogio">
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Nike Repel Miler
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Dress
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $120.50
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="itemslide">
+                                    <h4>
+                                        <div class="sanpham-chisnh">
+                                            <div class="anh-sanpham">
+                                                <img src="./assets/img/sanpham/kinhmat.png" alt="kinhmat">
+                                            </div>
+                                            <div class="thongtin-sanpham">
+                                                <div class="box-ten-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        Nike Sportswear Futura Luxe
+                                                    </p>
+                                                </div>
+                                                <div class="box-loai-sanpham">
+                                                    <p class=" p-mo-ttsanpham">
+                                                        Glasses
+                                                    </p>
+                                                </div>
+                                                <div class="box-gia-sanpham">
+                                                    <p class="txt-thongtin-sanpham">
+                                                        $160.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- instagram -->
+            <div class="box-instagram">
+                <div class="instagram">
+                    <div class="txt-follow">
+                        <p>Follow products and discounts on Instagram</p>
+                    </div>
+                    <div class="main-instagram">
+                        <img src="./assets/img/instagram/card1.png" alt="card1">
+                        <img src="./assets/img/instagram/card2.png" alt="card2">
+                        <img src="./assets/img/instagram/card3.png" alt="card3">
+                        <img src="./assets/img/instagram/card4.png" alt="card4">
+                        <img src="./assets/img/instagram/card5.png" alt="card5">
+                        <img src="./assets/img/instagram/card6.png" alt="card6">
+                    </div>
+                    <div class="instagram-footer">
+                        <div class="txt-orsubscribe">
+                            <p>Or subscribe to the newsletter</p>
+                        </div>
+                        <div class="box-input">
+                            <div class="box-input-trai">
+                                <input type="text" placeholder="Email address...">
+                                <div class=" line1pxblack"></div>
+                            </div>
+                            <div class="box-input-phai">
+                                <div class="input-main">
+                                    <p class="submit">SUBMIT</p>
+                                </div>
+                                <div class="line1pxblack"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-main -->
+            <div class="container-bodymain">
+                <div class="main-footer">
+                    <!-- left-footer -->
+                    <div class="left-footer">
+                        <div class="logo-footer-main">
+                            <img src="./assets/img/logo (1).png" alt="logo">
+                        </div>
+                        <div class="txt-footer-main">
+                            <p class="p-footer-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                        <!-- list logo footer -->
+                        <div class="list-logo-footer-main">
+                            <div class="timkiem logoshoping fixvitrilistlogo">
+                                <img class="icontimkiem" src="./assets/img/listlogofooter/fb.png" alt="fb">
+                            </div>
+                            <div class="timkiem logoshoping fixvitrilistlogo">
+                                <img class="icontimkiem" src="./assets/img/listlogofooter/skyper.png" alt="skyper.png">
+                            </div>
+                            <div class="timkiem logoshoping fixvitrilistlogo">
+                                <img class="icontimkiem" src="./assets/img/listlogofooter/in.png" alt="in.png">
+                            </div>
+                            <div class="timkiem logoshoping fixvitrilistlogo">
+                                <img class="icontimkiem" src="./assets/img/listlogofooter/instagram.png" alt="instagram.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu-footer-main -->
+                    <div class="menu-footer-main">
+                        <div class="title-menu-footer">
+                            <p class="font-family-opensans">CATALOG</p>
+                        </div>
+                        <div class="content-menu-footer">
+                            <ul>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Necklaces</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">hoodies</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Jewelry Box</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">t-shirt</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">jacket</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-footer-main menu-footer2">
+                        <div class="title-menu-footer">
+                            <p class="font-family-opensans">ABOUT US</p>
+                        </div>
+                        <div class="content-menu-footer">
+                            <ul>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Our Producers</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Sitemap</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">FAQ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">About Us</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Terms & Conditions</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-footer-main menu-footer3">
+                        <div class="title-menu-footer">
+                            <p class="font-family-opensans">CUSTOMER SERVICES</p>
+                        </div>
+                        <div class="content-menu-footer">
+                            <ul>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Contact Us</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Track Your Order</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Product Care & Repair</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Book an Appointment</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-menu-footer">
+                                        <p class="font-family-opensans">Shipping & Returns</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-foote-main -->
+            <div class="footer-footermain">
+                <div class="container-footermain">
+                    <div class="txt-footer-footermain">
+                        <p class="font-family-opensans">© 2022 Coral , Inc.</p>
+                    </div>
+                    <div class="logo-footer-footermain">
+                        <img src="./assets/img/listlogofooter/icons_payment 1.png" alt="icons_payment">
+                    </div>
+                    <button class="btn-footer-footermain">
+                        <img src="./assets/img/listlogofooter/button.png" alt="btn">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- import thư viện jquery-3 -->
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <!-- import thư viện OwlCarousel -->
+    <script src="./lib/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- import thư viện main.js -->
+    <script src="./assets/js/main.js"></script>
+
 </body>
+
 </html>
